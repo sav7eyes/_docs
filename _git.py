@@ -13,4 +13,3 @@ git commit -m “<message>”
 git log
 git checkout <commit hash>
 git checkout <branch name>
-
