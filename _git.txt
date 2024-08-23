@@ -1,6 +1,11 @@
-git
+sudo apt install wget gettext cmake gcc libz-dev libssl-dev libcurl4-gnutls-dev libexpat1-dev
+wget https://www.kernel.org/pub/software/scm/git/git-2.46.0.tar.gz
+tar xzf git-2.46.0.tar.gz
+cd git-2.46.0/
+sudo make prefix=/usr/local all
+sudo make prefix=/usr/local install
+exec bash
 git --version
-sudo apt-get install git
 
 git config --list
 git config --global user.name "Andrey Semiglazov"
