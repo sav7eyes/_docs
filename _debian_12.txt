@@ -1,3 +1,13 @@
+Installing snap on Debian
+
+sudo apt update
+sudo apt install snapd
+# or
+su root
+apt update
+apt install snapd
+
+
 Заменить репозитории в sources.list 
 su
 apt update
@@ -68,6 +78,8 @@ sudo apt install firmware-linux-nonfree
 
 И менеджер сети gnome (в Xfce уже установлен)
 sudo apt install network-manager-gnome
+
+sudo snap install telegram-desktop
 
 Далее по необходимости:
 # звук в терминале
