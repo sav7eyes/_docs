@@ -1,5 +1,5 @@
-apt-get install sudo -y
-sudo apt-get install aptitude
+sudo apt install sudo -y
+sudo apt install aptitude
 sudo aptitude update
 sudo aptitude upgrade
 
