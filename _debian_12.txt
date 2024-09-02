@@ -1,12 +1,10 @@
-Installing snap on Debian
-
 sudo apt update
-sudo apt install snapd
-# or
-su root
-apt update
-apt install snapd
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo add-apt-repository "deb http://dl.google.com/linux/chrome/deb/ stable main"
+sudo apt update
+sudo apt install google-chrome-stable
 
+sudo apt install snapd
 
 Заменить репозитории в sources.list 
 su
@@ -52,7 +50,7 @@ sudo apt update
 sudo apt upgrade
 
 Одной командой ставим необходимые утилиты
-sudo apt install gdebi thunar-gtkhash gedit nautilus gnome-disk-utility gnome-system-tools synaptic gnome-mpv qbittorrent vlc gnome-calculator
+sudo apt install gdebi gedit nautilus gnome-disk-utility gnome-system-tools synaptic gnome-mpv qbittorrent vlc gnome-calculator
 
 Русифицируем libreoffice:
 sudo apt install libreoffice libreoffice-l10n-ru libreoffice-help-ru 
@@ -67,7 +65,6 @@ sudo apt install blueman blueman bluez pulseaudio-module-bluetooth
 
 Драйвера для принтеров (тоже, если нужно):
 sudo apt-get install printer-driver-all
-sudo apt-get install cups hplip
 
 устанавливаем заголовки и модули ядра
 sudo apt install linux-headers-$(uname -r|sed 's,[^-]*-[^-]*-,,')
@@ -77,8 +74,6 @@ sudo apt install firmware-linux-nonfree
 
 И менеджер сети gnome (в Xfce уже установлен)
 sudo apt install network-manager-gnome
-
-sudo snap install telegram-desktop
 
 Далее по необходимости:
 # звук в терминале
@@ -92,7 +87,7 @@ sudo apt install neofetch
 
 Уменьшаем зависание выключения (включения) проблеммных процессов с 1.5 минуты на 10 сек.
 Редактируем конфиг с правами root /etc/systemd/system.conf
-sudo mousepad /etc/systemd/system.conf
+sudo nano /etc/systemd/system.conf
 Находим, раскоментируем и исправляем строки:
 DefaultTimeoutStartSec=10s
 DefaultTimeoutStopSec=10s
