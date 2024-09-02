@@ -4,6 +4,12 @@ sudo add-apt-repository "deb http://dl.google.com/linux/chrome/deb/ stable main"
 sudo apt update
 sudo apt install google-chrome-stable
 
+wget -O YANDEX-BROWSER-KEY.GPG http://repo.yandex.ru/yandex-browser/YANDEX-BROWSER-KEY.GPG
+sudo apt-key add YANDEX-BROWSER-KEY.GPG
+sudo sh -c «echo deb [arch=amd64] http://repo.yandex.ru/yandex-browser/deb beta main > /etc/apt/sources.list.d/yandex-browser-beta.list»
+sudo apt update
+sudo apt install yandex-browser-beta
+
 sudo apt install snapd
 
 Заменить репозитории в sources.list 
