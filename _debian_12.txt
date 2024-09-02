@@ -29,21 +29,20 @@ deb http://security.debian.org/ bookworm-security main
 deb-src http://security.debian.org/ bookworm-security main
 #---------------------------------------------------------------
 
-apt update
+sudo apt update
 
 для 64х битных дистрибутивов подключаем дополнительно 32х битную архитектуру:
 sudo dpkg --add-architecture i386
 
 Настраиваем автоматический вход при запуске системы. Необходимо отредактировать конфиг lightdm.conf
-sudo mousepad /etc/lightdm/lightdm.conf
-#вместо mousepad можно написать любой установленный текстовой редактор.
+sudo nano /etc/lightdm/lightdm.conf
 в открывшемся конфиге, после параметра [Seat:*] находим строки
-autologin-user=sav7eyes
+autologin-user=<username>
 autologin-user-timeout=0
-Нужно их раскоментировать и прописать свое имя пользователя, при котором и запланирован автовход.
+Нужно их раскоментировать и прописать свое <username>, при котором и запланирован автовход.
 
 Добавляем пользователя в группу sudo (активация sudo) командами:
-su -      #(знак - после su обязателен)
+su -
 adduser sav7eyes sudo 
 
 reboot
