@@ -11,7 +11,7 @@ sudo apt install grub-customizer
 sudo apt install snapd
 
 Заменить репозитории в sources.list 
-su
+sudo -i
 apt update
 apt install sudo
 
@@ -44,7 +44,7 @@ autologin-user-timeout=0
 Нужно их раскоментировать и прописать свое <username>, при котором и запланирован автовход.
 
 Добавляем пользователя в группу sudo (активация sudo) командами:
-su -
+sudo -i
 adduser sav7eyes sudo 
 
 reboot
