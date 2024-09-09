@@ -5,6 +5,6 @@ sudo aptitude upgrade
 
 sudo apt update
 sudo wget https://www.python.org/ftp/python/3.12.5/Python-3.12.5.tar.xz
-sudo tar xvf Python-3.12.5.tar.tgz
+sudo tar xvf Python-3.12.5.tar.xz
 
 python3 --version
