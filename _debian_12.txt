@@ -55,7 +55,7 @@ sudo apt update
 sudo apt upgrade
 
 Одной командой ставим необходимые утилиты
-sudo apt install gparted gdebi gedit nautilus gnome-disk-utility gnome-system-tools synaptic gnome-mpv qbittorrent vlc gnome-calculator doublecmd-gtk
+sudo apt install gparted gdebi synaptic qbittorrent vlc doublecmd-gtk
 
 Русифицируем libreoffice:
 sudo apt install libreoffice libreoffice-l10n-ru libreoffice-help-ru 
