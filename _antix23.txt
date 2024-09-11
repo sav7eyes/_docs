@@ -1,14 +1,14 @@
+# pwfeedback
 sudo visudo
 # After
 Defaults        env_reset
 # add string
 Defaults        pwfeedback
 
+# Firewall
 sudo ufw status
 # if Status: inactive
 sudo ufw default allow outgoing
-
-# Firewall
 sudo ufw default deny incoming
 sudo ufw app list
 sudo ufw allow SSH
