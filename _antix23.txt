@@ -1,0 +1,19 @@
+sudo visudo
+# After
+Defaults        env_reset
+# add string
+Defaults        pwfeedback
+
+sudo ufw status
+# if Status: inactive
+sudo ufw default allow outgoing
+
+# Firewall
+sudo ufw default deny incoming
+sudo ufw app list
+sudo ufw allow SSH
+sudo ufw limit SSH
+sudo nano /etc/default/ufw
+sudo ufw enable
+
+# Disk Manager
